@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagemApp"
+        android:layout_width="300dp"
+        android:layout_height="81dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/precoAlcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagemApp"
+        android:layout_marginLeft="48dp"
+        android:text="Preço Álcool"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/precoGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagemApp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/precoAlcool"
+        android:text="Preço Gasolina"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputAlcool"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precoAlcool"
+        android:layout_marginLeft="48dp"
+        android:background="@color/white"
+        android:hint="Preço em R$"
+        android:inputType="numberDecimal"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/inputGas"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precoGasolina"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@id/inputAlcool"
+        android:background="@color/white"
+        android:hint="Preço em R$"
+        android:inputType="numberDecimal"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/botaoVerificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputAlcool"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/botao_Verificar"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/showResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botaoVerificar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:hint="Resultado"
+        android:textSize="30sp" />
+
+</RelativeLayout>

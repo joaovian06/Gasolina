@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GasolinaOuAlcool</string>
+    <string name="botao_Verificar">Verificar</string>
+    <string name="informe_valor">Informe todos os valores</string>
+</resources>
